@@ -133,7 +133,6 @@ section:nth-child(even) {
 .display {
   width: 55%;
   margin-top: 6rem;
-  border: 1px dashed blueviolet;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -141,15 +140,15 @@ section:nth-child(even) {
 
 .meal_img {
   padding: 2rem;
-  border: 1px dashed blueviolet;
-
   object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .meal_img img {
-  width: 100%;
+  width: 95%;
+  height: 90%;
+  margin-top: 6rem;
 }
 
 .meal_heading {
@@ -167,7 +166,6 @@ section:nth-child(even) {
   font-style: italic;
   height: 60%;
   overflow: hidden;
-  border: 1px dotted black;
 }
 
 .btn {

@@ -145,7 +145,6 @@ section:nth-child(even) {
   text-align: end;
   width: 40rem;
   max-height: 40rem;
-
   left: 28rem;
   overflow: scroll;
 }
@@ -213,9 +212,6 @@ section:nth-child(even) {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* .loaded-meal button {
-  width: 10%;
-} */
 
 .icons #search-icon {
   display: none;
