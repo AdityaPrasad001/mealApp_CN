@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+
+  /* position: absolute; */
+  position: relative;
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+section:nth-child(even) {
+  background: #eee;
+}
+
+/* Header starts */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.logo i {
+  color: var(--green);
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--light-color);
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #fff;
+  background-color: var(--green);
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.icons i:hover {
+  color: #fff;
+  background: var(--green);
+  transform: rotate(360deg);
+}
+
+.icons #search {
+  height: 4rem;
+  width: 20rem;
+  border: 3px solid #eee;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  box-shadow: 0px 0px 0.1rem 0.1rem #27ae60;
+}
+
+.icons #search-icon {
+  display: none;
+}
+
+.header .icons #menu-bars {
+  display: none;
+}
+/* Header Ends */
+
+/* Meal Display Div starts */
+.meal_display {
+  border: 1px dotted red;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display {
+  width: 55%;
+  margin-top: 6rem;
+  border: 1px dashed blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.meal_img {
+  padding: 2rem;
+  border: 1px dashed blueviolet;
+
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meal_img img {
+  width: 100%;
+}
+
+.meal_heading {
+  color: var(--black);
+  font-size: 6rem;
+  line-height: 1.1;
+  padding: 1rem 0;
+}
+
+.meal_text {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  line-height: 1.1;
+  font-style: italic;
+  height: 60%;
+  overflow: hidden;
+  border: 1px dotted black;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+
+.btn:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+/* Meal Display Div ends */
+
+/* Footer Section Starts */
+.footer {
+  width: inherit;
+  height: 30rem;
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about {
+  width: 45%;
+}
+
+.company {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.company-details {
+  margin: 2rem 0rem;
+  font-size: 1.5rem;
+}
+
+.footer .partition {
+  border: 1px solid white;
+  width: 0px;
+  height: 20rem;
+}
+
+.footer .contacts {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .address {
+  font-size: 1.5rem;
+}
+
+.footer .social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .social i {
+  font-size: 2.5rem;
+  margin: 5px 5px;
+}
+
+/* Footer Section Ends */
+
+/* 
+.preview__title {
+    grid-column: 1/-1;
+    font-size: 1.45rem;
+    color: #f38e82;
+    text-overflow: ellipsis;
+    max-width: 25rem;
+    white-space: nowrap;
+    overflow: hidden;
+} */

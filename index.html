@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fooder</title>
+    <link
+      rel="icon"
+      href="https://png.pngitem.com/pimgs/s/18-186729_food-beverage-food-and-beverage-icon-hd-png.png"
+      type="image/icon type"
+    />
+
+    <!-- swiper css cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa-solid fa-utensils"></i> theFooder</a
+      >
+
+      <nav class="navbar">
+        <a href="#home" class="active" id="home">home</a>
+        <a href="#"  id="favourite">My Favourite</a>
+        <!-- favriote list ul(container) -->
+        <ul class="fav_lists"></ul>
+      </nav>
+
+      <div class="icons">
+        <input type="search" name="search" id="search" placeholder="Search" />
+        <!-- search box cards -->
+        <ul class="search-suggestions"></ul>
+
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        
+
+        <i class="fas fa-bars" id="menu-bars"></i>
+
+        <div class="userprofile"></div>
+      </div>
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Home section starts -->
+    <section class="home" id="home">
+      <div class="swiper mySwiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our sepcial dish</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Noodles tossed with veggies and stir fried in hot sauces.
+                Delectable mix of spicy flavours that will surely tingle your
+                taste buds.
+              </p>
+              <a href="#" class="btn">order now</a>
+              <a href="#" class="btn"><i class="fa-solid fa-heart"></i></a>
+              </a>
+            </div>
+            <div class="image">
+              <img src="images/home-img-1.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our sepcial dish</span>
+              <h3>peri peri chicken</h3>
+              <p>
+                Peri Peri Chicken is grilled chicken dish originated from
+                Portugal and Africa. The spicy marinated chicken is grilled to
+                perfection!! Sizzle your taste buds with this grilled chicken ,
+                however the hotness can be adjusted as you like and served with
+                additional hot sauces ( Nandos sauces taste the best along with
+                this chicken)
+              </p>
+              <a href="#" class="btn">order now</a>
+              <a href="#" class="btn"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="image">
+              <img src="images/home-img-2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our sepcial dish</span>
+              <h3>Hot & Spicy Pizza</h3>
+              <p>
+                Hot & Spicy Pizza Recipe in English is an easy and traditional
+                cooking recipe to prepare at home. It provides you an awesome
+                taste of Italian Recipes.
+              </p>
+              <a href="#" class="btn">order now</a>
+              <a href="#" class="btn"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="image">
+              <img src="images/home-img-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Home section ends -->
+
+    <!-- The Footer start -->
+    <section class="footer">
+      <div id="about" class="about">
+        <h1 id="company" class="company">theFooder</h1>
+
+        <div id="company-details" class="company-details">
+          <p>
+            TheFooder is an Indian multinational restaurant aggregator and food
+            delivery company founded by Aditya Prasad in 2021. TheFooder
+            provides information, menus and user-reviews of restaurants as well
+            as food delivery options from partner restaurants in select cities.
+          </p>
+        </div>
+      </div>
+
+      <div id="partition" class="partition"></div>
+      <div id="contacts" class="contacts">
+        <div id="address" class="address">
+          <h2>address</h2>
+          <p>
+            Street: 99, Katra Bariyan, Fateh Puri, Chandni Chowk
+            <br />
+            City: Delhi
+            <br />
+            State/province/area: Delhi
+            <br />
+            Phone number 00112396674
+            <br />
+            Zip code 110006
+          </p>
+        </div>
+        <div id="social" class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </section>
+    <!-- The Footer ends -->
+
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+  </body>
+</html>
